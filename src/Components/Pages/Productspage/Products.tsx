@@ -27,7 +27,7 @@ const ProductList = () => {
     const [products, setProducts] = useState<ApiResponse[] | null>(null);
 
     useEffect(() => {
-        fetch('https://fakestoreapi.com/products')
+        fetch('https://localhost:8000/index.php')
             .then(response => response.json())
             .then((data: ApiResponse[]) => {
                         setProducts(data);
