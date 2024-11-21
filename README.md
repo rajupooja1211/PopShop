@@ -30,24 +30,24 @@ Features-
 * The Login Page accepts any user credentials (username and password) without validation.
 * The "Login" button remains disabled until both fields are populated, after which it becomes active.
 2. Home Page:
-After a successful login, the user is redirected to the Home Page.
-Includes a navigation menu with options such as Home, Products, Shopping Cart, and Contact.
-Displays the user's Avatar along with a Logout button at the top.
+* After a successful login, the user is redirected to the Home Page.
+* Includes a navigation menu with options such as Home, Products, Shopping Cart, and Contact.
+* Displays the user's Avatar along with a Logout button at the top.
 3. Products Page (Product Listings):
-Dynamically displays products fetched from the PHP backend, which pulls data from an external API.
-Product details include title, price, category, description, and image.
-Each product has an "Add to Cart" button, which navigates to the Cart Page.
+* Dynamically displays products fetched from the PHP backend, which pulls data from an external API.
+* Product details include title, price, category, description, and image.
+* Each product has an "Add to Cart" button, which navigates to the Cart Page.
 4. Cart Page (Shopping Cart):
-Lists all the items added to the cart.
-Users can adjust the quantity of each item, and the total price updates dynamically.
-Allows adding multiple items to the cart.
-A "Process" button opens a modal for entering card details.
+* Lists all the items added to the cart.
+* Users can adjust the quantity of each item, and the total price updates dynamically.
+* Allows adding multiple items to the cart.
+* A "Process" button opens a modal for entering card details.
 5. Checkout (Payment Successful):
-Provides a seamless checkout process with payment integration.
-After entering card details, a confirmation alert notifies the user of successful payment.
-Redirects the user back to the Home Page.
+* Provides a seamless checkout process with payment integration.
+* After entering card details, a confirmation alert notifies the user of successful payment.
+* Redirects the user back to the Home Page.
 6. Responsive Design:
-Ensures a mobile-friendly experience, with functionality across devices.
+* Ensures a mobile-friendly experience, with functionality across devices.
 
 Setup and Installation-
 Prerequisites:
