@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDIAN FOOD IMAGE CLASSIFICATION</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="pill-nav">
+        
+        <div class="nav-profile-container">
+            <img src="images/me.png" alt="Profile" class="nav-profile-img">
+            
+            <div class="work-tooltip">
+                <span class="dot"></span> Available for work
+            </div>
+        </div>
+
+    
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            
+            <li><a href="projects.html">Projects</a></li>
+            
+            <li><a href="index.html#work">Experience</a></li>
+        </ul>
+        <a href="index.html#contact" class="btn-contact">Contact</a>
+    </nav>
+
+    <section class="project-header">
+        <div class="content-wrapper">
+            <span class="project-tag-pill">COMPUTER VISION PROJECT</span>
+            <h1 class="giant-text-project">INDIAN FOOD IMAGE CLASSIFICATION</h1>
+            <p class="project-lead">An interactive data analysis project focused on identifying and visualizing crime patterns in San Francisco.
+<br>This dashboard helps uncover insights such as crime hotspots, time-based trends, and category-wise distribution making raw crime data more actionable for public awareness, safety research, or city planning.
+            
+            
+            <div class="project-stats-row">
+                <div class="p-stat">
+                    <small>Year</small>
+                    <strong>2025</strong>
+                </div>
+                <div class="p-stat">
+                    <small>Industry</small>
+                    <strong>AI / Food Tech</strong>
+                </div>
+                
+                <div class="p-stat">
+                    <small>Status</small>
+                    <strong>Completed</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-body">
+        <div class="content-wrapper">
+            
+<div class="text-block">
+                <h2>Tech Stack</h2>
+                <p>Python, TensorFlow, Keras, OpenCV, Matplotlib, NumPy, Jupyter Notebook</p></div>
+
+            <div class="text-block">
+                <h2>THE PROBLEM</h2>
+                <p>Indian cuisine is rich and diverse but visually recognizing food items can be difficult, especially for AI systems due to similarity in texture, plating, and regional variations.
+
+There was a need for a custom-trained model that could reliably classify Indian food images as most general-purpose datasets (like ImageNet) lack this category.</p>           
+
+
+            <div class="text-block">
+                <h2>THE SOLUTION</h2>
+                <p>Built and trained a Convolutional Neural Network (CNN) using TensorFlow and Keras on a labeled dataset of Indian food images.
+<p>Key features :</p>
+
+<li><p>Custom CNN Model – Designed a multi-layer convolutional architecture with ReLU activations and softmax output.
+<li><p>Image Preprocessing – Resized, normalized, and augmented dataset to improve model generalization.
+
+<li><p>District-Level Insights – Breakdown of crime volume per police district.
+
+
+<li><p>Train/Test Split – Handled validation with proper dataset partitioning.
+<li><p>Accuracy Visualization – Plotted training vs. validation accuracy/loss to track model performance.
+<li><p>Model Evaluation – Achieved high accuracy in classifying common Indian dishes (e.g., dosa, biryani, samosa).
+<li><p>Scalable Codebase – Notebook structure allows easy updates or transfer learning with larger datasets.
+</div>
+
+             <div class="text-block">
+                <h2>THE OUTCOME</h2>
+
+
+<p>The model <a href="https://github.com/rajupooja1211/indian_food_image_classification" target="_blank" rel="noopener noreferrer" style="color: #00C2C2; text-decoration: underline;">Indian-food-image-classification</a> can now identify popular Indian dishes from images with strong accuracy and serves as a solid base for more advanced applications like calorie estimation, regional tagging, or smart meal logging.
+
+<p>This project shows practical application of:</p>
+<li><p>Deep learning
+<li><p>Data preprocessing
+<li><p>Image augmentation
+<li><p>Model evaluation and visualization
+</div>
+<div class="content-wrapper">
+    <div class="project-hero-img">
+        
+        <div class="project-hero-img">
+            <img src="images/indian-food/food1.png" alt="Screenshot 1">
+        </div>
+
+        <div class="project-hero-img">
+            <img src="images/indian-food/food2.png" alt="Screenshot 2">
+        </div>
+
+    </div>
+    </section>
+
+       <div class="cursor-dot"></div>
+       
+    </section> 
+
+    <footer class="lime-footer">
+        <div class="footer-col">
+            <small>Email</small>
+            <strong>poojamraju01@gmail.com</strong>
+        </div>
+       <div class="footer-col social-icons">
+        <a
+          href="https://www.linkedin.com/in/pooja-m-raju/"
+          target="_blank"
+          aria-label="LinkedIn"
+        >
+          <i class="fab fa-linkedin" style="color: #0abab5"></i>
+        </a>
+
+        <a
+          href="https://github.com/rajupooja1211/"
+          target="_blank"
+          aria-label="GitHub"
+        >
+          <i class="fab fa-github" style="color: #0abab5"></i>
+        </a>
+      </div>
+    </footer>
+    <div class="bottom-toggle-pill" id="themeToggle">
+        <div class="toggle-circle"></div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // --- 1. DEFINE ALL VARIABLES FIRST ---
+            const themeToggle = document.getElementById('themeToggle');
+            const footer = document.querySelector('.lime-footer');
+            const card = document.getElementById('travelingCard');
+            const stage = document.querySelector('.scroll-stage');
+            const badge = document.querySelector('.sticker-badge');
+
+            // --- 2. THEME TOGGLE LOGIC ---
+            // A. Check Local Storage on Load
+            const currentTheme = localStorage.getItem('theme');
+            if (currentTheme === 'light') {
+                document.body.classList.add('light-mode');
+                if (themeToggle) themeToggle.classList.add('active');
+            }
+
+            // B. Click Listener
+            if (themeToggle) {
+                themeToggle.addEventListener('click', () => {
+                    document.body.classList.toggle('light-mode');
+                    themeToggle.classList.toggle('active');
+                    
+                    if (document.body.classList.contains('light-mode')) {
+                        localStorage.setItem('theme', 'light');
+                    } else {
+                        localStorage.setItem('theme', 'dark');
+                    }
+                });
+            }
+
+            // --- 3. MASTER SCROLL LISTENER ---
+            window.addEventListener('scroll', () => {
+                const windowHeight = window.innerHeight;
+                const windowWidth = window.innerWidth;
+
+                // A. Hide Toggle When Footer is Visible
+                if (themeToggle && footer) {
+                    const footerRect = footer.getBoundingClientRect();
+                    if (footerRect.top < windowHeight) {
+                        themeToggle.style.opacity = '0';
+                        themeToggle.style.pointerEvents = 'none';
+                    } else {
+                        themeToggle.style.opacity = '1';
+                        themeToggle.style.pointerEvents = 'auto';
+                    }
+                }
+
+                // B. 3D Card Animation (Only runs if stage exists)
+                if (stage && card) {
+                    const rect = stage.getBoundingClientRect();
+                    const stageHeight = stage.offsetHeight;
+
+                    let scrollDistance = -rect.top;
+                    let totalScrollable = stageHeight - windowHeight;
+                    let progress = scrollDistance / totalScrollable;
+
+                    // Clamp progress
+                    if (progress < 0) progress = 0;
+                    if (progress > 1) progress = 1;
+
+                    // Badge Visibility
+                    if (badge) {
+                        badge.style.opacity = (progress > 0.05) ? '0' : '1';
+                    }
+
+                    // Card Movement
+                    let moveDistance = windowWidth * 0.25; 
+                    let moveProgress = progress * 2; 
+                    if (moveProgress > 1) moveProgress = 1;
+                    let xMove = moveProgress * moveDistance;
+
+                    // Card Rotation
+                    let yRotation = progress * 360;
+                    let zTilt = Math.sin(progress * Math.PI) * -15; 
+                    
+                    card.style.transform = `translateX(${xMove}px) rotateY(${yRotation}deg) rotateZ(${zTilt}deg)`;
+                }
+            });
+
+            // --- 4. NAVIGATION CLICK HANDLER (Smooth Scroll) ---
+            const scrollLinks = [
+                { id: 'link-home', pos: 0 },
+                { id: 'link-about', pos: window.innerHeight * 3 }, 
+                { id: 'link-projects', elementId: 'projects' },
+                { id: 'link-work', elementId: 'work' },
+                { id: 'link-contact', elementId: 'contact' }
+            ];
+
+            scrollLinks.forEach(link => {
+                const btn = document.getElementById(link.id);
+                if (btn) {
+                    btn.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        if (link.pos !== undefined) {
+                            window.scrollTo({ top: link.pos, behavior: 'smooth' });
+                        } else if (link.elementId) {
+                            const section = document.getElementById(link.elementId);
+                            if (section) window.scrollTo({ top: section.offsetTop, behavior: 'smooth' });
+                        }
+                    });
+                }
+            });
+
+            // --- 5. HANDLE INCOMING LINKS ---
+            if (window.location.hash) {
+                const targetId = window.location.hash.substring(1);
+                setTimeout(() => {
+                    const targetSection = document.getElementById(targetId);
+                    if (targetSection) {
+                        window.scrollTo({ top: targetSection.offsetTop, behavior: 'smooth' });
+                    }
+                }, 100);
+            }
+
+        });
+        // --- CUSTOM CURSOR LOGIC (Smooth + No Jump) ---
+            const cursorDot = document.querySelector('.cursor-dot');
+            let isFirstMove = true;
+
+            window.addEventListener('mousemove', (e) => {
+                const posX = e.clientX;
+                const posY = e.clientY;
+
+                if (cursorDot) {
+                    if (isFirstMove) {
+                        // 1. FIRST MOVE: Teleport instantly (No Animation)
+                        // This prevents the "flying from top-left" look
+                        cursorDot.style.left = `${posX}px`;
+                        cursorDot.style.top = `${posY}px`;
+                        cursorDot.style.opacity = '1'; // Show it now
+                        isFirstMove = false;
+                    } else {
+                        // 2. ALL OTHER MOVES: Use the Smooth Animation you wanted
+                        cursorDot.animate({
+                            left: `${posX}px`,
+                            top: `${posY}px`
+                        }, { duration: 500, fill: "forwards" });
+                    }
+                }
+            });
+
+            // --- HOVER EFFECTS ---
+            const clickableElements = document.querySelectorAll('a, button, .project-card, .bottom-toggle-pill, .bento-box');
+
+            clickableElements.forEach(el => {
+                el.addEventListener('mouseenter', () => {
+                    if(cursorDot) cursorDot.classList.add('cursor-hover');
+                });
+                el.addEventListener('mouseleave', () => {
+                    if(cursorDot) cursorDot.classList.remove('cursor-hover');
+                });
+            });
+        
+    </script>
+
+
+</body>
+</html>
